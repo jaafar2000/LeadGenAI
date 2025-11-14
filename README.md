@@ -56,6 +56,6 @@ Cached data will be used until the quota resets.
 
 
 
-## ** License**
+## License
 
 For personal use and learning. Not intended for heavy commercial scraping.
