@@ -1,4 +1,10 @@
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+export const revalidate = 0;
 "use client";
+
+
+
 import { useLeads } from "@/utils/useLeads";
 import { LeadCard } from "@/components/ui/LeadCard";
 import { PitchModal } from "@/components/ui/PitchModal";
@@ -6,7 +12,6 @@ import { SearchForm } from "@/components/actions/SearchForm";
 import { ExportButton } from "@/components/actions/ExportButton";
 import { Spinner } from "@/components/ui/Spinner";
 import { Brain } from "lucide-react";
-export const dynamic = "force-dynamic";
 
 export default function page() {
   const {
