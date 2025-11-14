@@ -42,7 +42,8 @@ Cached data will be used until the quota resets.
 ### Mobile  
 ![Mobile](./public/image/Mobile.png)
 
-
+## Links
+- **Live Site:** [LeadGen AI](https://lead-gen-ai-hazel.vercel.app/)
 
 ## **🛠️ Tech Stack**
 
@@ -54,6 +55,10 @@ Cached data will be used until the quota resets.
 * LocalStorage caching
 * JSON file fallback
 
+
+
+## Author
+- LinkedIn – [Jaafar Youssef](https://www.linkedin.com/in/jaafar-youssef-923100249/)
 
 
 ## License
