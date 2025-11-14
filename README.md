@@ -1,7 +1,4 @@
-Alright Jaafar, here’s a **short, clean, professional README.md** that doesn’t drown people in paragraphs.
-Simple… direct… and tells users exactly what they need.
 
----
 
 # **LeadGen AI**
 
