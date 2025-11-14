@@ -1,12 +1,11 @@
-// /src/components/ui/LeadCard.tsx
 import { Loader, Phone, MessageSquare } from "lucide-react";
-import { Lead } from "@/hooks/useLeads";
+import { Lead } from "@/utils/useLeads";
 
 type LeadCardProps = {
     lead: Lead;
     generatePitch: (lead: Lead) => void;
     loadingLeadId: string | null;
-    id: string // The custom stable ID from page.tsx
+    id: string 
 };
 
 export const LeadCard = ({ id, lead, generatePitch, loadingLeadId }: LeadCardProps) => {
@@ -15,7 +14,6 @@ export const LeadCard = ({ id, lead, generatePitch, loadingLeadId }: LeadCardPro
     const isDisabled = loadingLeadId !== null;
 
     return (
-        // Hover border unified to purple
         <div className="bg-neutral-800 border border-neutral-700 p-5 rounded-xl shadow-lg transition hover:border-purple-500/50">
             <div className="flex justify-between items-start">
                 <h3 className="font-extrabold text-xl text-white leading-tight">{lead.name}</h3>
@@ -40,7 +38,6 @@ export const LeadCard = ({ id, lead, generatePitch, loadingLeadId }: LeadCardPro
                         href={lead.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        // Blue retained ONLY for external links
                         className="text-blue-400 hover:text-blue-300 transition text-sm font-medium"
                     >
                         Visit Website &rarr;
@@ -50,7 +47,6 @@ export const LeadCard = ({ id, lead, generatePitch, loadingLeadId }: LeadCardPro
                 <button
                     onClick={() => generatePitch(lead)}
                     disabled={isDisabled} 
-                    // Action button is primary purple
                     className="ml-auto bg-purple-600 hover:bg-purple-700 transition px-4 py-2 rounded-full text-white text-sm font-semibold flex items-center disabled:opacity-50"
                 >
                     {isThisCardLoading ? ( 
