@@ -1,6 +1,4 @@
-// /src/app/page.tsx
 "use client";
-// 🛑 FIX: Changed import from @/utils/useLeads to @/hooks/useLeads
 import { useLeads } from "@/utils/useLeads";
 import { LeadCard } from "@/components/ui/LeadCard";
 import { PitchModal } from "@/components/ui/PitchModal";
@@ -8,6 +6,7 @@ import { SearchForm } from "@/components/actions/SearchForm";
 import { ExportButton } from "@/components/actions/ExportButton";
 import { Spinner } from "@/components/ui/Spinner";
 import { Brain } from "lucide-react";
+export const dynamic = "force-dynamic";
 
 export default function page() {
   const {
@@ -32,7 +31,6 @@ export default function page() {
 
   return (
     <div className="min-h-screen bg-neutral-950 text-white p-6 md:p-10 flex flex-col items-center mt-10">
-      {/* Header / Branding (Unified Gradient) */}
       <header className="w-full max-w-3xl mb-10 pt-4">
         <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 flex items-center gap-2">
           LeadGen AI <Brain className="w-8 h-8 text-purple-400" />
@@ -53,11 +51,9 @@ export default function page() {
         </div>
       )}
       <ExportButton results={results} />
-      {/* Main Content Area */}
       <div className="w-full max-w-3xl">
         {loading && <Spinner />}{" "}
         {showInitialState && (
-          // Unified initial state box border and text color to purple
           <div className="text-center p-10 bg-neutral-900 rounded-xl border border-purple-800/50">
             <h3 className="text-xl font-bold text-purple-300">
               Ready to find leads.
@@ -77,7 +73,6 @@ export default function page() {
             </p>
           </div>
         )}
-        {/* Results List */}
         <div className="space-y-4">
           {results.map((lead, i) => (
             <LeadCard 
