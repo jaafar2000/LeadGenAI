@@ -1,0 +1,206 @@
+{
+  "title": "Cafes in New York",
+  "query": "cafes in new york",
+  "leads": [
+    {
+      "name": "Café Lyria",
+      "address": "166 Crosby St, New York, NY 10012",
+      "rating": 4.6,
+      "reviews": 525,
+      "phone": "",
+      "website": "https://www.instagram.com/cafelyria?igsh=MWMzbG14eGkxb3M5ag==",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "In Common NYC - A Breakfast & Brunch Restaurant",
+      "address": "441 9th Ave Suite 101, New York, NY 10001",
+      "rating": 4.5,
+      "reviews": 1921,
+      "phone": "(646) 370-3099",
+      "website": "https://www.incommonnyc.com/",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Urban Backyard",
+      "address": "180 Mulberry St, New York, NY 10012",
+      "rating": 4.8,
+      "reviews": 685,
+      "phone": "(646) 692-9957",
+      "website": "http://www.urbanbackyardnyc.com/",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Cafe Diem NYC",
+      "address": "37 Bowery, New York, NY 10002",
+      "rating": 4.8,
+      "reviews": 110,
+      "phone": "",
+      "website": "http://cafediemnyc.com/",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Cafe Aroma",
+      "address": "502 9th Ave, New York, NY 10018",
+      "rating": 4.5,
+      "reviews": 1023,
+      "phone": "(646) 861-1311",
+      "website": "https://cafearomaorder.com/website1",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Times Square Cafe",
+      "address": "1657 Broadway, New York, NY 10019",
+      "rating": 4.5,
+      "reviews": 262,
+      "phone": "(212) 389-6157",
+      "website": "https://www.timessquarenyc.org/food-beverage/times-square-cafe",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Bluestone Lane Tribeca Café",
+      "address": "109 W Broadway, New York, NY 10013",
+      "rating": 4.7,
+      "reviews": 1332,
+      "phone": "(718) 374-6858",
+      "website": "https://bluestonelane.com/?y_source=1_MjUxNjY5ODYtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Grace Street Coffee & Desserts",
+      "address": "17 W 32nd St, New York, NY 10001",
+      "rating": 4.5,
+      "reviews": 3383,
+      "phone": "(917) 540-2776",
+      "website": "https://www.bygracestreet.com/",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Noise NYC",
+      "address": "255A Canal St, New York, NY 10013",
+      "rating": 5,
+      "reviews": 1296,
+      "phone": "",
+      "website": "",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Charlotte Cafe",
+      "address": "605 2nd Ave, New York, NY 10016",
+      "rating": 4.9,
+      "reviews": 958,
+      "phone": "(347) 318-7107",
+      "website": "http://www.charlottecafe.com/",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "The Lost Draft",
+      "address": "398 Broome St, New York, NY 10013",
+      "rating": 4.7,
+      "reviews": 931,
+      "phone": "(646) 524-6021",
+      "website": "http://thelostdraft.com/",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Suited NYC",
+      "address": "45 John St, New York, NY 10038",
+      "rating": 4.6,
+      "reviews": 664,
+      "phone": "(917) 244-2795",
+      "website": "http://www.suitednyc.com/",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Little Collins",
+      "address": "708 3rd Ave, New York, NY 10017",
+      "rating": 4.5,
+      "reviews": 2494,
+      "phone": "(212) 308-1969",
+      "website": "http://www.littlecollinsnyc.com/",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Gold coffee",
+      "address": "491 3rd Ave, New York, NY 10016",
+      "rating": 4.9,
+      "reviews": 883,
+      "phone": "",
+      "website": "https://goldcoffee.us/",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Park Cafe",
+      "address": "153 Manhattan Ave, New York, NY 10025",
+      "rating": 4.8,
+      "reviews": 348,
+      "phone": "(516) 749-0697",
+      "website": "",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Stumptown Coffee Roasters",
+      "address": "18 W 29th St, New York, NY 10001",
+      "rating": 4.5,
+      "reviews": 1656,
+      "phone": "(347) 414-7816",
+      "website": "https://www.stumptowncoffee.com/pages/new-york-ace-hotel-cafe?utm_source=gbp&utm_medium=organic&utm_campaign=local",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Coffee Project New York | East Village",
+      "address": "239 E 5th St, New York, NY 10003",
+      "rating": 4.6,
+      "reviews": 802,
+      "phone": "(212) 228-7888",
+      "website": "https://coffeeprojectny.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_ev",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "787 Coffee",
+      "address": "131 E 7th St, New York, NY 10009",
+      "rating": 4.9,
+      "reviews": 2899,
+      "phone": "(646) 649-2774",
+      "website": "http://787coffee.com/",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "787 Coffee",
+      "address": "204 W 10th St, New York, NY 10014",
+      "rating": 4.9,
+      "reviews": 3655,
+      "phone": "(646) 852-6473",
+      "website": "http://www.787coffee.com/",
+      "lat": "",
+      "lon": ""
+    },
+    {
+      "name": "Cafe Luna",
+      "address": "628 Hudson St, New York, NY 10014",
+      "rating": 4.6,
+      "reviews": 723,
+      "phone": "(646) 861-1751",
+      "website": "http://www.cafelunanewyork.com/",
+      "lat": "",
+      "lon": ""
+    }
+  ]
+}

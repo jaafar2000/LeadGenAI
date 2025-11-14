@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Alright Jaafar, here’s a **short, clean, professional README.md** that doesn’t drown people in paragraphs.
+Simple… direct… and tells users exactly what they need.
 
-## Getting Started
+---
 
-First, run the development server:
+# **LeadGen AI**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+LeadGen AI is a lightweight, fast lead-generation tool built with Next.js, Groq AI, and SerpAPI.
+You type something like “cafes in Dubai” → it pulls real business results → and one click generates a personalized outreach message for each lead.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+It’s built for freelancers, agencies, and anyone tired of scrolling Google Maps manually.Built with **Next.js**, **Groq**, and **SerpAPI**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## **✨ Features**
 
-## Learn More
+* **Search Any Business**
+  e.g. “cafes in Dubai”, “gyms in London”, “salons in Toronto”.
 
-To learn more about Next.js, take a look at the following resources:
+* **AI Outreach Messages**
+  One click generates a personalized pitch for each lead.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Export to CSV**
+  Download leads for email campaigns or CRM import.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Automatic Fallback Mode**
+  When the real-time API can’t return results, the app loads a **random cached dataset** so the UI never breaks.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## **⚠️ Important Note About Missing Results**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If the search returns no live data and you see a warning:
+
+> *“We hit the API limit. Showing cached results.”*
+
+That means **the free SerpAPI monthly quota is finished**, not that the app is broken.
+Cached data will be used until the quota resets.
+
+---
+## Overview
+### Desktop  
+![Desktop](./public/image/Desktop.png)
+
+### Mobile  
+![Mobile](./public/image/Mobile.png)
+
+
+
+## **🛠️ Tech Stack**
+
+* Next.js 15
+* React
+* TailwindCSS
+* Groq (allam-2-7b model)
+* SerpAPI
+* LocalStorage caching
+* JSON file fallback
+
+
+
+## ** License**
+
+For personal use and learning. Not intended for heavy commercial scraping.
