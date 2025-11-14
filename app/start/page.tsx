@@ -1,12 +1,6 @@
-"use client"
+"use client";
 
-export const dynamic = "force-dynamic";
-export const fetchCache = "force-no-store";
-export const revalidate = 0;
-
-
-
-import { useLeads } from "@/utils/useLeads";
+import { useLeads } from "@/app/utils/useLeads";
 import { LeadCard } from "@/components/ui/LeadCard";
 import { PitchModal } from "@/components/ui/PitchModal";
 import { SearchForm } from "@/components/actions/SearchForm";
@@ -81,9 +75,9 @@ export default function page() {
         )}
         <div className="space-y-4">
           {results.map((lead, i) => (
-            <LeadCard 
+            <LeadCard
               key={`${lead.address} ${lead.phone}`}
-              lead={lead} 
+              lead={lead}
               id={`${lead.address} ${lead.phone}`}
               generatePitch={generatePitch}
               loadingLeadId={pitchLeadId}

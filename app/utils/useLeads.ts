@@ -1,6 +1,7 @@
 "use client";
 import { useState, useCallback, FormEvent, useEffect } from "react";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
+
+// --- REMOVED NEXT.JS IMPORTS (useSearchParams, useRouter, usePathname) ---
 
 export type Lead = {
   id: string;
@@ -30,33 +31,55 @@ const getInitialResults = (): Lead[] => {
 };
 
 export const useLeads = () => {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-
+  // --- STATE FOR URL & INITIAL QUERY ---
+  // We cannot use Next.js hooks, so we set a client-side state for the query
+  const [searchQuery, setSearchQuery] = useState("");
+  const [results, setResults] = useState<Lead[]>([]);
   const [warning, setWarning] = useState("");
-  const initialQuery = searchParams.get("q") || "";
-  const [results, setResults] = useState<Lead[]>(
-    initialQuery ? getInitialResults() : []
-  );
-  const [searchQuery, setSearchQuery] = useState(initialQuery);
   const [loading, setLoading] = useState(false);
   const [pitchLeadId, setPitchLeadId] = useState<string | null>(null);
   const [pitch, setPitch] = useState("");
   const [showModal, setShowModal] = useState(false);
 
+  // --- EFFECT 1: INITIAL URL READ & INITIAL RESULTS ---
   useEffect(() => {
-    const currentQ = searchParams.get("q") || "";
+    // Only run this code on the client side (after hydration)
+    if (typeof window === "undefined") return;
+
+    // Read initial query from the URL
+    const params = new URLSearchParams(window.location.search);
+    const initialQuery = params.get("q") || "";
+
+    setSearchQuery(initialQuery);
+
+    // Set initial results based on whether a query exists (to load the cache)
+    if (initialQuery) {
+        setResults(getInitialResults());
+    }
+  }, []); // Run once on mount
+
+  // --- EFFECT 2: URL WRITE SYNC ---
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const newParams = new URLSearchParams(window.location.search);
+    const currentQ = newParams.get("q") || "";
+
     if (searchQuery === currentQ) return;
-    const newParams = new URLSearchParams(searchParams.toString());
+
     if (searchQuery) {
       newParams.set("q", searchQuery);
     } else {
       newParams.delete("q");
     }
-    router.replace(`${pathname}?${newParams.toString()}`, { scroll: false });
-  }, [searchQuery, router, pathname, searchParams]);
 
+    // Use history.replaceState to change the URL without a full reload
+    const newUrl = `${window.location.pathname}?${newParams.toString()}`;
+    window.history.replaceState(null, '', newUrl);
+
+  }, [searchQuery]); // Run whenever searchQuery changes
+
+  // --- EFFECT 3: LOCAL STORAGE SYNC ---
   useEffect(() => {
     if (results.length > 0 && searchQuery.length > 0) {
       localStorage.setItem(RESULTS_KEY, JSON.stringify(results));
@@ -65,6 +88,7 @@ export const useLeads = () => {
     }
   }, [results, searchQuery]);
 
+  // --- Lead Search Logic ---
   const handleSubmit = useCallback(
     async (e: FormEvent) => {
       e.preventDefault();
@@ -105,6 +129,7 @@ export const useLeads = () => {
     [searchQuery, loading]
   );
 
+  // --- Pitch Generation Logic ---
   const generatePitch = useCallback(
     async (lead: Lead) => {
       const leadId = `${lead.address} ${lead.phone}`;

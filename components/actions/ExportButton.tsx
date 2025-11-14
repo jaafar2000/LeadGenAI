@@ -1,8 +1,6 @@
-// /src/components/actions/ExportButton.tsx
 "use client";
 import { Download } from "lucide-react";
-// Assumes Lead type is exported from useLeads hook file
-import { Lead } from "@/utils/useLeads";
+import { Lead } from "@/app/utils/useLeads";
 
 type ExportButtonProps = {
   results: Lead[];
@@ -12,7 +10,6 @@ export const ExportButton = ({ results }: ExportButtonProps) => {
   const exportCSV = (data: Lead[]) => {
     if (!data || data.length === 0) return;
     
-    // ... (CSV logic unchanged)
     const headers = ["Name", "Address", "Rating", "Reviews", "Phone", "Website"];
     const escape = (value: string) => {
       if (!value) return '""';
@@ -51,7 +48,6 @@ export const ExportButton = ({ results }: ExportButtonProps) => {
       <p className="text-gray-400 text-sm font-medium self-center">
         Found {results.length} leads.
       </p>
-      {/* Retained green for export/success */}
       <button
         onClick={() => exportCSV(results)}
         className="bg-green-500 hover:bg-green-600 transition px-4 py-2 rounded-lg text-black font-semibold text-sm flex items-center space-x-2 shadow-md shadow-green-700/50"

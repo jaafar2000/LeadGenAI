@@ -1,5 +1,5 @@
 import { Loader, Phone, MessageSquare } from "lucide-react";
-import { Lead } from "@/utils/useLeads";
+import { Lead } from "@/app/utils/useLeads";
 
 type LeadCardProps = {
     lead: Lead;
