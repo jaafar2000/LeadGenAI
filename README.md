@@ -47,7 +47,7 @@ Cached data will be used until the quota resets.
 
 ## **🛠️ Tech Stack**
 
-* Next.js 15
+* Next.js 16
 * React
 * TailwindCSS
 * Groq (allam-2-7b model)
